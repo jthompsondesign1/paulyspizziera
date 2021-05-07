@@ -1,0 +1,967 @@
+* {
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+
+
+body {
+    font-family:sans-serif;
+    font-size:1em;
+    height:100%
+}
+
+#wrap{
+  margin:20 px 20px; /* use this with width to center things */
+}
+
+
+img, iframe{
+     max-width: 100%;
+     height: auto;
+     display: block;
+}
+
+
+
+
+
+
+
+
+/* this is the header content area, add things here if you want it show in the header content area*/
+header{
+     width: 30%;
+     background-color:#efec72;
+     max-width: 250px;
+     height: 100%;
+     position: fixed;
+     z-index: 1;
+}
+
+
+
+
+/* This is the header sidebar menu */
+.topnav {
+  overflow: hidden;
+}
+
+/* The styles for the links inside the header sidebar menu */
+.topnav a {
+  color:#8f2a2a;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-family: 'Poiret One', cursive;
+  font-weight:bold;
+  text-transform: uppercase;
+  list-style: none;
+  text-decoration: none;
+  display: block;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+     color: #e2211c;
+}
+
+/* Add an active class to highlight the current page*/
+.topnav-active {
+  background-color: #8f2a2a;
+  background: rgb(143, 42, 42, 0.4);
+
+}
+
+
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+
+
+/* this is the end of the header content area, add things above here if you want it show in the header content area*/
+
+
+
+
+
+
+
+
+/* this is the main content area, add things here if you want it show in the main content area*/
+main{
+    margin-left: 250px;
+    padding: 15px 10px;
+    height: 100%;
+    position: relative;
+
+}
+
+h2, h3{
+    font-family:'Poiret One', cursive;
+    font-size:30px;
+
+}
+
+h1{
+    font-size:70px;
+    text-align:center;
+    font-family:'Poiret One', cursive;
+    border-bottom-style: solid;
+    border-bottom-width: medium;
+    border-bottom-color: #0F2736;
+}
+
+h4{
+    font-family:'Poiret One', cursive;
+    font-size:20px;
+}
+
+p{
+     font-family: 'Lora', serif;
+     font-size: 17px;
+     font-weight: 300;
+     color:#0F2736;
+}
+
+a{
+    font-size:25px;
+    font-weight:bold;
+    font-family: 'Poiret One', cursive;
+    color:#efec72;
+}
+
+
+
+.column{
+     float: right;
+     width: 50%;
+     padding: .5em;
+}
+
+.column:after{
+  content: "";
+  clear:both;
+  display: inline-block;
+}
+
+
+
+
+/*this is the footer*/
+#footer {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    color: #0F2736;
+    text-align: center;
+    clear: both;
+    margin: 0;
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    font-size:1em;
+    padding:.5em;
+}
+/*this is the end of the footer*/
+
+
+/* this is the end of the main content area, add things above if you want it show in the main content area*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*this is information for the menu page*/
+
+.grid-item, .grid-sizer {
+     width: 25%;
+     padding: .5em;
+
+}
+
+
+/*this is the overlay for the images on the menu page*/
+.grid-item img:hover {
+     background-color: black;
+     opacity: .6;
+}
+
+.grid-item{
+     position: relative;
+}
+
+.grid-item span{
+     opacity: 0;
+     color: black;
+     display: table-cell;
+     text-align: center;
+     width:100%;
+     font-size: 1.2em;
+     font-family: 'Lora', serif;
+     font-weight: bold;
+     position: absolute;
+     top:25%;
+}
+
+.grid-item:hover span{
+    color: black;
+    opacity: 1;
+    font-family: 'Lora', serif;
+    font-size:15px;
+}
+
+
+/*this is the end of the overlay for the images on the menu page*/
+
+
+
+
+
+/*THIS IS THE ADD TO CART CARD INFO*/
+.card {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width:300px;
+    margin: auto;
+    text-align: center;
+}
+
+.price {
+  color: grey;
+  font-size: 20px;
+}
+
+.card button {
+ border:none;
+    padding:.5em;
+    margin:1em .5em;
+    border-radius: 12px;
+    background-color:#8f2a2a;
+    cursor: pointer;
+    color:#efec72;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.card button:hover {
+  opacity: 0.7;
+}
+/*THIS IS THE END OF THE ADD TO CART CARD INFO*/
+
+
+
+/* these are the menu buttons*/
+button{
+    border:none;
+    padding:.5em;
+    margin:1em .5em;
+    border-radius: 12px;
+    background-color:#8f2a2a;
+    cursor: pointer;
+    color:#efec72;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Poiret One', cursive;
+    font-weight:bold;
+    text-transform: uppercase;
+    list-style: none;
+}
+
+.button-group.filter-button-group center{
+     display: block;
+     width: 100%;
+}
+
+
+
+button:hover{
+     background:#e2211c;
+}
+
+button.is-checked{
+     text-decoration: underline;
+}
+/* this is the end of the menu buttons content.*/
+
+
+
+/* this is the back to top button on the menu page*/
+#backtop {
+    position: fixed;
+    left:auto;right: 20px;top:auto;bottom: 20px;
+    outline: none;/*this is the arrow color, change if you want*/
+    overflow:hidden;
+    color:#fff;
+    text-align:center;
+    background-color:rgba(49,79,96,0.84);/*this is the arrow color, change if you want*/height:40px;
+    width:40px;
+    line-height:40px;
+    font-size:14px;
+    border-radius:2px;
+    cursor:pointer;
+    transition:all 0.3s linear;
+    z-index:999999;
+    opacity:1;
+    display:none;
+}
+#backtop:hover {
+    background-color:#27CFC3;/*this is the arrow color, change if you want*/
+}
+#backtop.mcOut {
+    opacity:0;
+}
+/* this is the end of the back to top button*/
+
+
+/* Slideshow container */
+.slideshow-container {
+    width:980px;
+    position: relative;
+    margin: auto;
+    padding:2em;
+    transition-duration:4s;
+}
+
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width:auto;
+    margin-top: -22px;
+    padding: 16px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right:0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
+
+
+
+
+
+/*THIS IS THE END OF THE MENU TAB INFORMATION */
+
+
+
+
+
+
+
+/*THIS IS THE START OF THE ORDER TAB INFORMATION*/
+.row {
+  display: -ms-flexbox; /* IE10 */
+  display: flex;
+  -ms-flex-wrap: wrap; /* IE10 */
+  flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.col-25 {
+  -ms-flex: 25%; /* IE10 */
+  flex: 25%;
+}
+
+.col-50 {
+  -ms-flex: 50%; /* IE10 */
+  flex: 50%;
+}
+
+.col-75 {
+  -ms-flex: 75%; /* IE10 */
+  flex: 75%;
+}
+
+.col-25, .col-50, .col-75 {
+  padding: 0 16px;
+}
+
+
+
+input[type=text] {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px;
+  border-radius: 3px;
+}
+
+label {
+  margin-bottom: 10px;
+  display: block;
+}
+
+.icon-container {
+  margin-bottom: 20px;
+  padding: 7px 0;
+  font-size: 24px;
+}
+
+.btn {
+  background-color: #4CAF50;
+  color: white;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  width: 100%;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 17px;
+}
+
+.btn:hover {
+  background-color: #45a049;
+}
+
+span.price {
+  float: right;
+  color: grey;
+}
+
+/*THIS IS THE END OF THE ORDER TAB INFORMATION*/
+
+
+
+
+
+
+
+
+
+
+/*this starts the the contact page information*/
+
+
+/* this is the form on the contact page*/
+form{
+    width:60%;
+    margin:20px;
+    background-color:#efec72;
+    background:rgb(239, 236, 114, .5);
+    padding:12px 15px;
+    position: relative;
+
+}
+
+
+label{
+    display:block;
+    padding: 1em .5em;
+    font-family: 'Poiret One', cursive;
+    font-size:20px;
+    font-weight:bold;
+    color:#0F2736;
+}
+
+input, textarea{
+    width: 100%;
+    height: 30px;
+    padding:12px 15px;
+    border:2px;
+    border-radius: 12px;
+    border-color: #FFF4AC;
+    box-sizing: border-box;
+    resize: none;
+    box-sizing: border-box;
+    font-family: 'Lora', serif;
+}
+
+textarea{
+     height: 120px;
+}
+
+
+select {
+  width: 100%;
+  padding: 16px 20px;
+  border: none;
+  border-radius: 12px;
+}
+
+option{
+     border-radius: 12px;
+
+}
+
+#name{
+  font-family: 'Montserrat', sans-serif;
+}
+
+/* style for the submit button*/
+#submit{
+  float:right;
+  border-radius: 12px;
+  padding:1em;
+  border-color: #FFF4AC;
+  padding:.5em;
+  margin:1em .5em;
+  border-radius: 12px;
+  cursor: pointer;
+  color:#0F2736;
+  font-size: 17px;
+  font-family: 'Poiret One', cursive;
+  font-weight:bold;
+  text-transform: uppercase;
+}
+
+.antispam{
+     display: none;
+}
+
+#thanks{
+     margin: 0 auto;
+}
+
+form::after{
+  content:"";
+  clear:both;
+  display:table;
+}
+
+/* this is the end of the form content on the contact page*/
+
+.columncontact{
+    float:left;
+    width:30%;
+    
+}
+
+/*this is the start of the social icons*/
+.social{
+     height: auto;
+     display: flex;
+     list-style: none;
+}
+
+
+
+.fab{
+  font-size: 1em;
+  padding: 14px;
+}
+
+/* social LINK STYLES*/
+
+/* unvisited link */
+.social a {
+     color:#e2211c;
+}
+
+/* visited link */
+.social a:visited{
+     color: #efec72;
+}
+
+/* mouse over link */
+.social a:hover {
+     color: #8f2a2a;
+}
+
+/* selected link */
+.social a:active{
+     color: #0F2736;
+}
+/*this is the end of the social information*/
+
+
+/*THIS IS THE END OF THE CONTACT TAB INFORMATION*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*this is the location page information*/
+.map{
+    float:left;
+    width:800px;
+    height:600px;
+    padding:1em;
+    
+}
+
+.map:after{
+  content: "";
+  clear:both;
+  display:block;
+}
+
+
+/*this is the end of the location page information*/
+
+
+
+/*this is the end of the main section info*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MEDIA QUERIES*/
+/* The styles above apply to the desktop layout, the media queries you add below change those styles for smaller screens */
+
+
+/*applies only to screens under 768px - mobile*/
+@media only screen and (max-width: 768px){
+    
+    header{
+          width:100%;
+          max-width: 1200px;
+          position: relative;
+          height:auto;
+     }
+
+     .topnav a {display: none;}
+
+     .topnav a.icon {
+     float: right;
+     display: block;
+     }
+
+     .topnav.responsive {position: relative;}
+
+     .topnav.responsive a.icon {
+     position: absolute;
+     right: 0;
+     top: 0;
+     }
+
+
+     .topnav.responsive a {
+     float: none;
+     display: block;
+     text-align: center;
+     }
+    
+    
+    p, h1, h2, h3,{
+    padding:1px;
+    font-family:'sans-serif';
+}
+    
+    .row {
+    flex-direction: column-reverse;
+  }
+  .col-25 {
+    margin-bottom: 20px;
+  }
+    
+    
+
+a{
+    font-size:20px;
+    font-weight:bold;
+    font-family: 'Poiret One', cursive;
+}
+    
+    
+     main{
+          width:100%;
+          float:none;
+          margin:0 auto;
+     }
+
+
+
+     form{
+       width:100%;
+       margin-top:0;
+     }
+    
+/*this starts the menu information*/
+
+
+/*this ends the menu information*/
+
+/*this is the location page information*/
+.map{
+    float:none;
+    width:600px;
+    height:450px;
+    padding:1em;
+    
+}
+
+.map:after{
+  content: "";
+  clear:both;
+  display:block;
+}
+
+
+/*this is the end of the location page information*/
+    
+    
+/*this is for full size images, on menu page*/
+     .grid-item, .grid-sizer{
+          width: 100%;
+     }
+
+/*this is for the buttons on menu page*/
+    .button-group.filter-button-group{
+        display:inline-grid;
+        width:100%;
+   }
+
+   button:hover{
+        background-color: #0F2736;
+        background: rgb(224, 224, 224, 0.5);
+   }
+    
+
+/*this is for the columns on the about and contact page*/
+   .column{
+       float: left;
+       width: 50%;
+       padding: .5em;
+   } 
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+}
+
+    
+  
+
+
+     
+
+
+/*applies only to screens btwn 769px and 992px - tablet*/
+@media only screen and (min-width:769px) and (max-width: 992px){
+    /* Give space around main area */
+     .fancybox-custom-layout .fancybox-outer {
+       top: 0px;
+       left: 0px;
+       bottom: 0px;
+       right: 0px;
+       margin: auto;
+       /*max-width: 1180px;
+       max-height: 495px;*/
+       overflow: visible;
+       background: #fff;
+       box-shadow: 10px 10px 15px rgba(0,0,0,0.3);
+       transition: opacity .3s;
+     }
+
+     /* Make it to fade-out while closing */
+     .fancybox-custom-layout.fancybox-is-closing .fancybox-outer {
+       opacity: 0;
+     }
+
+     /* Set color for background element */
+     .fancybox-custom-layout .fancybox-bg {
+       background: #f6f6f6;
+     }
+
+     .fancybox-custom-layout.fancybox-is-open .fancybox-bg {
+       opacity: 1;
+     }
+
+     /* Move caption area to the right side */
+     .fancybox-custom-layout .fancybox-caption-wrap {
+       top: 0;
+       right: 44px;
+       bottom: 0;
+       left: auto;
+       width: 256px;
+       padding: 0;
+       background: #333;
+       pointer-events: all; /* Make text selectable */
+       border-right: 1px solid rgba(255,255,255,.08);
+     }
+
+     /* Adjust content area position */
+     .fancybox-custom-layout .fancybox-stage {
+       right: 300px;
+     }
+
+     /* Remove top border from the caption */
+     .fancybox-custom-layout .fancybox-caption {
+       padding: 30px 20px;
+       border: 0;
+     }
+
+     /* Align buttons at the right side  */
+     .fancybox-custom-layout .fancybox-toolbar {
+       top: 0;
+       right: 0;
+       bottom: 0;
+       left: auto;
+       width: 44px;
+       background: #333;
+       border-left: 1px solid #222;
+     }
+
+     /* Remove background from all buttons */
+     .fancybox-custom-layout .fancybox-button,
+     .fancybox-custom-layout .fancybox-navigation button:before {
+       background: transparent;
+     }
+
+     /* Change arrow color */
+     .fancybox-custom-layout .fancybox-navigation button {
+       color: #333 !important;
+       padding: 10px;
+     }
+
+     /* Reposition arrows */
+     .fancybox-custom-layout .fancybox-button--arrow_left {
+       left: 0px;
+     }
+
+     .fancybox-custom-layout .fancybox-button--arrow_right {
+       right: 300px; /*this puts the right arrow on the same background as the left so the color can be the same*/
+     }
+
+     .fancybox-custom-layout.fancybox-show-thumbs .fancybox-button--arrow_right {
+       right: -272px;
+     }
+	}
+
+
