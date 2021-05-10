@@ -1,5 +1,5 @@
-# paulyspizziera
+# Paulys Pizziera Branding
 
-Rebranding Project
+A Rebranding Project for Paulys Pizzeria 
 
-https://jthompsondesign1.github.io/paulyspizziera.github.io/
+https://paulyspizziera.github.io/
