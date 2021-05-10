@@ -2,4 +2,4 @@
 
 A Rebranding Project for Paulys Pizzeria 
 
-https://paulyspizziera.github.io/
+https://jthompsondesign1.github.io/paulyspizziera.github.io/
